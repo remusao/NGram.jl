@@ -2,10 +2,7 @@
 
 ## Linear interpolation
 
-This implementation uses the linear interpolation to build the model. For
-example, with the trigram model, if we want to compute `p(book | the, green)`,
-instead of juste computing `count("the green book") / count("the green")`, we
-also use information from `unigram` and `bigram` to smooth the results
+This implementation uses the linear interpolation to build the model. For example, with the trigram model, if we want to compute `p(book | the, green)`, instead of juste computing `count("the green book") / count("the green")`, we also use information from `unigram` and `bigram` to smooth the results
 
 ```
 p(book | the, green) = a * count("the green book") / count("the green")
