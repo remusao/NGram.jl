@@ -1,5 +1,9 @@
 module NGram
 
-# package code goes here
+using TextAnalysis
+
+include("ngram.jl")
+
+export NGramModel
 
 end # module
